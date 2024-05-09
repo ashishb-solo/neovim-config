@@ -35,6 +35,9 @@ return {
         opts.desc = "Show LSP definitions"
         keymap.set("n", "gd", "<cmd>Telescope lsp_definitions<CR>", opts) -- show lsp definitions
 
+        opts.desc = "Search LSP symbols"
+        keymap.set("n", "<leader>fy", "<cmd>Telescope lsp_dynamic_workspace_symbols<CR>", opts)
+
         opts.desc = "Go to LSP definition (new vsplit)"
         keymap.set("n", "gw",
           function()
