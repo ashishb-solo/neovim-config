@@ -49,6 +49,7 @@ return {
       git = {
         ignore = false,
       },
+      on_attach = require("ashish.plugins.nvim-tree-keybindings.nvim-tree-keybindings")
     })
 
     -- set keymaps
