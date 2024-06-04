@@ -9,6 +9,12 @@ return {
     -- vim.g.loaded_netrwPlugin = 1
 
     nvimtree.setup({
+      hijack_netrw = false,
+      -- shouldn't be necessary, see :help nvim-tree-opts-hijack-directories,
+      -- which states that this feature is disabled if hijack_netrw = false
+      -- hijack_directories = {
+      --   enable = false,
+      -- },
       view = {
         width = 35,
         -- relativenumber = true,
