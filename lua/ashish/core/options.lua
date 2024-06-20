@@ -44,3 +44,12 @@ opt.splitbelow = true -- split horizontal window to the bottom
 
 -- turn off swapfile
 -- opt.swapfile = false
+
+vim.cmd([[
+au BufRead,BufNewFile *.go,go.mod,go.sum setfiletype go
+]])
+
+vim.cmd([[
+autocmd FileType go, set noexpandtab
+autocmd FileType go set ts=4
+]])
