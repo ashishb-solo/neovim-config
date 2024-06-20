@@ -47,9 +47,9 @@ opt.splitbelow = true -- split horizontal window to the bottom
 
 vim.cmd([[
 au BufRead,BufNewFile *.go,go.mod,go.sum setfiletype go
+au BufRead,BufNewFile Makefile setfiletype make
 ]])
 
 vim.cmd([[
-autocmd FileType go, set noexpandtab
-autocmd FileType go set ts=4
+autocmd FileType go,make set noexpandtab ts=4 sts=4 sw=4
 ]])
