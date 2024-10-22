@@ -4,3 +4,17 @@ Additional helpful source(s):
 * https://www.getman.io/posts/programming-go-in-neovim/
 
 Browse [lua/ashish/plugins](lua/ashish/plugins) to see configured plugins and their related key-bindings.
+
+# Troubleshooting
+
+## libfzf.so not found
+
+Telescope may complain that `libfzf.so` was not found.
+
+**Solution:** `cd ~/.local/share/nvim/lazy/telescope-fzf-native.nvim/ && make`
+
+## Treesitter errors when running :help
+
+Treesitter may report lots of errors when reading vimdoc
+
+**Solution:** `TSInstall vimdoc`. Or alternately, just include `vimdoc` in `treesitter.lua`
