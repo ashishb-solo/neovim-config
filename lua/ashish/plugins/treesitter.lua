@@ -40,7 +40,7 @@ return {
         "dockerfile",
         "gitignore",
         -- "query",
-        -- "vimdoc",
+        "vimdoc",
         -- "c",
         "go",
       },
