@@ -11,6 +11,6 @@ return {
       vim.keymap.set(mode, l, r, { buffer = bufnr, desc = desc })
     end
 
-    map("n", "<leader>tu", dapui.toggle, "Toggle nvim-dap-ui")
+    map("n", "<leader>du", dapui.toggle, "Toggle nvim-dap-ui")
   end
 }
